@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "68d4c5e7-80a0-45bc-9863-ee5acf598ea4",
+		"name": "TELKOM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mobil Masuk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"plat_nomor\":\"D 2344 SDDJ\",\n\t\"tipe\":\"SUV\",\n\t\"warna\": \"hitam\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Mobil Terparkir",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Parking Lot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/park",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"park"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset & Resize Kapasitas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"kapasitas\": 3\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/park",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"park"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mobil Keluar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"plat_nomor\": \"D 868 SDJ\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/exit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"exit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Mobil by Tipe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipe\": \"SUV\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/car/type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"car",
+						"type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Mobil by Warna",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"warna\": \"putih\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/car/color",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"car",
+						"color"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

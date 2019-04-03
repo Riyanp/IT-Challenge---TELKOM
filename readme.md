@@ -1,23 +1,14 @@
-# How To Instal
-
-[![Laravel](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+# How To Install
 
 - Make sure you have PHP 5.6 and Laravel 5.3 installed on your computer.
 - Download or clone this repository.
-- Open command tools or terminal and type ``composer install``
-- 
+- Open command tools or terminal and change directory to this repository location, type ``composer install``and press enter.
+- Type ``php artisan storage:link`` and press enter to link the JSON file inside the Laravel local storage.
+- Finally type ``php artisan serve`` and press enter to run the application.
 
-## Official Documentation
+## How to access REST API
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+The easiest way to access the app function is by using Postman, you can download the collection from here https://drive.google.com/open?id=11mM_ItEzrGpxl5bXFdfpWUGtVXzHv2-8 or you can copy the file inside the project by name TELKOM.postman_collection.json and import the file into you postman collection.
 
 ## License
 
